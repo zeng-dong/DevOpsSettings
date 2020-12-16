@@ -11,7 +11,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  projectPath: '**/DevOpsSettings'
+  projectPath: '**/DevOpsSettings.DevOpsSettings'
 
 steps:
 - task: UseDotNet@2
