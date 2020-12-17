@@ -19,9 +19,13 @@ namespace DevOpsSettings.Controllers
 
         public IActionResult Index()
         {
+            ViewData["myTargeted"] = _configuration["MyTargeted"];
             ViewData["myKeyValue"] = _configuration["MyKey"];
             ViewData["positionTitle"] = _configuration["Position:Title"];
             ViewData["positionName"] = _configuration["Position:Name"];
+
+            var domain = $"{ HttpContext.Request.Scheme}://{HttpContext.Request.Host}";
+            ViewData["domain"] = domain;
 
             return View();
         }

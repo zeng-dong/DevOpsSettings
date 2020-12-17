@@ -1,6 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@{ ViewData["Title"] = "Home Page"; }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
@@ -8,6 +6,11 @@
     <p>My Key value: @ViewData["myKeyValue"]</p>
     <p>Title: @ViewData["positionTitle"]</p>
     <p>Name: @ViewData["positionName"]</p>
+
+    <br />
+    <p>Domain obtained dynamically: @ViewData["domain"]</p>
+    <p>Domain targeted in config: @ViewData["myTargeted"]</p>
+
 
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
